@@ -3,6 +3,7 @@
 @import 'vars'
 
 body
+    font-family: Ubuntu, sans-serif
     .background
         z-index: -1
         position: absolute
@@ -30,3 +31,69 @@ body
         background-color: $button-color
         font-family: $body-font
         cursor: pointer
+    .one-top
+        border: 1px solid red
+        height: 87px
+    .two-top
+        border: 1px solid red
+        height: 91px
+    .container
+        height: 545px
+        background-color:#eaf7f4
+        padding: 55px
+        .sign-in
+            padding: 30px
+            font-size: 16px
+            width: 1240px
+            background-color: #fff
+            margin: auto
+            h2
+                font-weight: bold
+                font-size: 24px
+                line-height: 40px
+            .form
+                display: flex
+                flex-direction: column
+                .form-group
+                    text-align: left
+                    display: flex
+                    flex-direction: column
+                    label
+                        margin: 10px 0 8px 0
+                        color: #686868
+                        line-height: 30px
+                        .label-required
+                            margin-left: 5px
+                            color: #ff0000
+                    input
+                        height: 40px
+                        border-radius: 5px
+                        border: 1px solid #686868
+                        line-height: 18px
+                .form-button
+                    margin: 15px 15px 15px 0
+                    display: flex   
+                    align-items: center
+                    .sign-button
+                        border-radius: 5px
+                        font-size: 16px
+                        font-family: Roboto,sans-serif
+                        font-weight: bold
+                        padding: 15px 20px 
+                        line-height: 16px
+                    .form-check
+                        margin-left: 40px
+                        display: flex
+                        align-items: center
+                        color: #686868
+                        .check
+                            font-size: 14px
+                            line-height: 30px
+                            margin-right: 10px
+                .forgot
+                        a
+                            color: #00c194
+                            text-decoration: none
+                            list-style: none  
+
+
