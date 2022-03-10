@@ -1,0 +1,46 @@
+@import 'vars'
+@import 'globals'
+@import 'function'
+@import 'devices'
+
+.landing-page
+    &-background
+        z-index: -1
+        position: absolute
+        top: 0
+        left: 0
+        background-image: url('../images/background.jpeg')
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        width: 100%
+        height: 98vh 
+        border-bottom-left-radius: 60% 150px
+        border-bottom-right-radius: 60% 150px
+    &-navbar
+        &-container
+            @include flexbox()
+            justify-content: space-between
+            height: 70px
+            &-logo
+                @include flexbox()
+                @include align-items()
+            &-lists
+                @include flexbox()
+                @include align-items()
+                &-list
+                    @include flexbox()
+                    &-item
+                        &__link
+                            color: $text-white
+                            text-decoration: none
+            &-settings
+                @include flexbox()
+                @include align-items()
+                &-lists
+                    @include flexbox()
+                    @include align-items()
+                    li
+                        a
+                            text-decoration: none
+                            color: $text-white

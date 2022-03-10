@@ -1,10 +1,55 @@
 @import url("./reset.css");
 @import url("./normalize.css");
-body {
-  font-family: Ubuntu, sans-serif;
-}
+
 
 body .background {
+/* Custom Button */
+.property-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 42px;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #00c194;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+.property-button__plus {
+  display: block;
+  height: 100%;
+  border: 1px solid #008e6d;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.landing-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+}
+
+.landing-page header {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 9;
+  grid-column: 2 / 11;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing-page-background {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -19,22 +64,66 @@ body .background {
   border-bottom-right-radius: 60% 150px;
 }
 
-body main {
-  position: relative;
-  z-index: 1;
+.landing-page-navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70px;
 }
 
-body button {
-  padding: 0 22px 0 64px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 42px;
-  border: none;
-  border-radius: 30px;
+.landing-page-navbar-container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.landing-page-navbar-container-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.landing-page-navbar-container-lists-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing-page-navbar-container-lists-list-item__link {
   color: #ffffff;
-  background-color: #00c194;
-  font-family: "Roboto";
-  cursor: pointer;
+  text-decoration: none;
+}
+
+.landing-page-navbar-container-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.landing-page-navbar-container-settings-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.landing-page-navbar-container-settings-lists li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 body .one-top {
