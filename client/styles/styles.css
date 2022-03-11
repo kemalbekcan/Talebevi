@@ -26,6 +26,18 @@
   margin-right: 10px;
 }
 
+.primary-button {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto,sans-serif;
+  line-height: 16px;
+  background-color: #00c194;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px 20px;
+}
+
 .landing-page, .sign-in {
   display: -ms-grid;
   display: grid;
@@ -37,6 +49,13 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 9;
   grid-column: 2 / 11;
+}
+
+.landing-page .sign-in-content, .sign-in .sign-in-content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 9;
+  grid-column: 2 / 11;
+  border: 1px solid red;
 }
 
 .landing-page footer, .sign-in footer {
@@ -54,6 +73,7 @@
   display: flex;
 }
 
+/*Home Page*/
 .landing-page-background {
   z-index: -1;
   position: absolute;
@@ -130,4 +150,12 @@
   text-decoration: none;
   color: #ffffff;
 }
+
+/*Home Page*/
+/*Sign Page*/
+.sign-in {
+  background-color: #eaf7f4;
+}
+
+/*Sign Page*/
 /*# sourceMappingURL=styles.css.map */
