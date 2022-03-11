@@ -1,5 +1,5 @@
-import Image from "next/image";
-import AddProperty from "./Buttons/AddProperty";
+import Image from 'next/image';
+import AddProperty from '@/buttons/AddProperty'
 
 function Header() {
     return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import InputButton from '../../components/Buttons/InputButton'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import InputButton from '@/buttons/InputButton'
 import Link from 'next/link'
 
 const index = () => {
