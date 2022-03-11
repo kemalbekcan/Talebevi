@@ -36,9 +36,12 @@
                 &-list
                     @include flexbox()
                     &-item
+                        padding: 24px 12px
                         &__link
                             color: $text-white
                             text-decoration: none
+                        &:hover
+                            border-bottom: 1px solid $button-color
             &-settings
                 @include flexbox()
                 @include align-items()
