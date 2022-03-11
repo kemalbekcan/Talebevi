@@ -2,8 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import InputButton from "../../components/Buttons/InputButton";
-import Link from "next/link";
+import InputButton from '../../components/Buttons/InputButton'
+import Link from 'next/link'
 
 const index = () => {
   return (
@@ -21,26 +21,32 @@ const index = () => {
             <h2>Login</h2>
             <form>
               <div className="sign-in-content-form-input-section">
-                <label htmlFor="">Username and E-mail <span className="required">*</span> </label>
+                <label htmlFor="">
+                  Username and E-mail <span className="required">*</span>{' '}
+                </label>
                 <input type="text" name="" id="" />
               </div>
               <div className="sign-in-content-form-input-section">
-                <label htmlFor="">Password <span className="required">*</span></label>
+                <label htmlFor="">
+                  Password <span className="required">*</span>
+                </label>
                 <input type="password" name="" id="" />
               </div>
               <div className="sign-in-content-form-input-section-buttons">
-                <InputButton message="Login"/>
+                <InputButton message="Login" />
                 <input type="checkbox" name="Remember Me" />
                 <label htmlFor="">Remember Me</label>
-                </div>
+              </div>
             </form>
-            <Link href={'/'}><a>Forgot your password?</a></Link>
+            <Link href={'/'}>
+              <a>Forgot your password?</a>
+            </Link>
           </div>
         </div>
         <Footer />
       </div>
     </>
-  );
-};
+  )
+}
 
 export default index
