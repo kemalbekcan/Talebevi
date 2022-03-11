@@ -39,3 +39,9 @@ yarn-error.log*
 
 # ds.store
 .DS_Store
+
+# yarn.lock
+yarn.lock
+
+# package-lock.json
+package-lock.json
