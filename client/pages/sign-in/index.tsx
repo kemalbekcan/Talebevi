@@ -18,8 +18,8 @@ const index = () => {
 
         <div className="sign-in-content">
           <div className="sign-in-content-form">
-            <h2>Login</h2>
-            <form>
+            <form>            
+              <h2>Login</h2>
               <div className="sign-in-content-form-input-section">
                 <label htmlFor="">
                   Username and E-mail <span className="required">*</span>{' '}
@@ -36,11 +36,14 @@ const index = () => {
                 <InputButton message="Login" />
                 <input type="checkbox" name="Remember Me" />
                 <label htmlFor="">Remember Me</label>
-              </div>
-            </form>
-            <Link href={'/'}>
+              </div>            
+              <div className='forgot'>
+              <Link href={'/'}>
               <a>Forgot your password?</a>
             </Link>
+              </div>
+            </form>
+
           </div>
         </div>
         <Footer />

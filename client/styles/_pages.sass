@@ -8,6 +8,7 @@
 /*Home Page*/
 
 .landing-page
+    
     &-background
         z-index: -1
         position: absolute
@@ -53,5 +54,57 @@
 /*Sign Page*/
 .sign-in
     background-color: $background 
-
+    &-content
+        background-color: #fff
+        margin: 55px 0 110px 0
+        padding: 20px 15px 15px 15px
+        &-form
+            form
+                padding-left: 15px 
+                padding-right: 15px 
+            h2
+                font-weight: bold
+                font-size: 24px
+                line-height: 40px
+            &-input-section
+                input
+                    width: 100%
+                    height: 40px
+                    outline: none
+                    color: $secondary-text
+                    border-radius: 4px
+                    border: 1px solid $secondary-text
+                label
+                    display: block
+                    margin: 10px 0 8px 0
+                    font-family: Roboto,sans-serif
+                    font-size: 16px
+                    line-height: 30px
+                    color: $secondary-text
+                    text-align: left
+                    .required
+                        color: $red
+                        margin-left: 1px
+                &-buttons
+                    margin-top: 15px
+                    display: flex
+                    align-items: center
+                    button
+                        cursor: pointer
+                    input
+                        margin-left: 40px
+                        margin-right: 10px
+                        width: 18px
+                        height: 18px
+                    label
+                        color: #878c9f 
+                        font-size: 14px
+            .forgot
+                margin-top: 15px            
+                a
+                    color: #00c194
+                    font-size: 16px
+                    line-height: 30px
+                    text-decoration: none
+                    margin-top: 15px          
 /*Sign Page*/
