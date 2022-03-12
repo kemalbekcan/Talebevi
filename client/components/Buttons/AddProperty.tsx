@@ -1,11 +1,16 @@
-import React, { FC } from "react";
-import Props from "../../interfaces/ButtonInterface";
+import React, { FC } from 'react'
+import Props from '../../interfaces/ButtonInterface'
+import { FaPlusCircle } from 'react-icons/fa'
 
-const AddProperty: React.FC<Props> = ({ message }) => (
-  <button className="property-button">
-    <span className="property-button__plus">plus</span>
-    {message}
-  </button>
-);
+const AddProperty: FC<Props> = ({ message }) => {
+  return (
+    <div className="property-button">
+      <div className="property-button-left">
+        <FaPlusCircle />
+      </div>
+      <div className="property-button-right">{message}</div>
+    </div>
+  )
+}
 
-export default AddProperty;
+export default AddProperty

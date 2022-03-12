@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import AddProperty from '@/buttons/AddProperty'
-
 function Header() {
     return (
         <header className="landing-page-navbar">

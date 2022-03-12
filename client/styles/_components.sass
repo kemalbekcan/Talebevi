@@ -2,6 +2,8 @@
 
 /* Custom Button */
 .property-button
+    width: 190px
+    height: 44px
     display: flex
     align-items: center
     font-size: 15px
@@ -13,11 +15,22 @@
     background-color: $button-color
     font-family: $body-font
     cursor: pointer
-    &__plus
-        display: block
-        height: 100%
-        padding-right: 10px
-        margin-right: 10px
+    &-left
+        height: 44px
+        width: 42px
+        border-top-left-radius: $button-radius
+        border-bottom-left-radius: $button-radius
+        background: darken($button-color, 10)
+        display: flex
+        justify-content: center
+        align-items: center
+    &-right
+        width: 148px
+        height: 44px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-left: 1px solid darken($button-color, 10)
 
 .primary-button
     font-size: 16px

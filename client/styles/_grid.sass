@@ -1,13 +1,19 @@
-.landing-page, .sign-in, .sign-up
 .wrapper
-    display: grid
-    grid-template-columns: repeat(11, 1fr)
     header
-        grid-column: 2 / 11
-    .sign-in-content
-        grid-column: 3 / 10
-    .sign-up-content
-        grid-column: 3 / 10
-header
-footer
-    display: none
+    .sign-in
+        display: grid
+        grid-template-columns: repeat(11, 1fr)
+        &-content
+            grid-column: 3 / 10
+    .sign-up
+        display: grid
+        grid-template-columns: repeat(11, 1fr)
+        &-content
+            grid-column: 3 / 10
+    .forgot-password
+        display: grid
+        grid-template-columns: repeat(11, 1fr)
+        &-content
+            grid-column: 3 / 10
+    footer
+        display: none

@@ -2,6 +2,8 @@
 @import url("./normalize.css");
 /* Custom Button */
 .property-button {
+  width: 190px;
+  height: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,11 +21,36 @@
   cursor: pointer;
 }
 
-.property-button__plus {
-  display: block;
-  height: 100%;
-  padding-right: 10px;
-  margin-right: 10px;
+.property-button-left {
+  height: 44px;
+  width: 42px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: #008e6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.property-button-right {
+  width: 148px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #008e6d;
 }
 
 .primary-button {
@@ -38,17 +65,11 @@
   padding: 15px 20px;
 }
 
-.wrapper {
+.wrapper .sign-in {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[11];
       grid-template-columns: repeat(11, 1fr);
-}
-
-.wrapper header {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 9;
-  grid-column: 2 / 11;
 }
 
 .wrapper .sign-in-content {
@@ -57,13 +78,33 @@
   grid-column: 3 / 10;
 }
 
+.wrapper .sign-up {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+}
+
 .wrapper .sign-up-content {
   -ms-grid-column: 3;
   -ms-grid-column-span: 7;
   grid-column: 3 / 10;
 }
 
-footer {
+.wrapper .forgot-password {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+}
+
+.wrapper .forgot-password-content {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-column: 3 / 10;
+}
+
+.wrapper footer {
   display: none;
 }
 
@@ -373,4 +414,8 @@ footer {
 }
 
 /*Sign Up Page*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
 /*# sourceMappingURL=styles.css.map */
