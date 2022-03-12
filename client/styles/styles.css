@@ -104,6 +104,19 @@
   grid-column: 3 / 10;
 }
 
+.wrapper .error {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+}
+
+.wrapper .error-container {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
+}
+
 .wrapper footer {
   display: none;
 }
@@ -414,6 +427,27 @@
 }
 
 /*Sign Up Page*/
+.error-container h1 {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 50px;
+}
+
+.error-container p {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+.error-container button {
+  padding: 15px 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
