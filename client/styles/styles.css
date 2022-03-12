@@ -233,4 +233,86 @@ footer {
 }
 
 /*Sign Page*/
+.forgot-password {
+  height: 350px;
+  background-color: #eaf7f4;
+}
+
+.forgot-password-content {
+  background-color: #eaf7f4;
+  margin: 110px 0 110px 0;
+  padding: 20px 15px 15px 15px;
+}
+
+.forgot-password-content-form form {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.forgot-password-content-form p {
+  font-size: 16px;
+  color: #686868;
+}
+
+.forgot-password-content-form-input-section input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  color: #686868;
+  border-radius: 4px;
+  border: 1px solid #686868;
+}
+
+.forgot-password-content-form-input-section label {
+  display: block;
+  margin: 10px 0 8px 0;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #686868;
+  text-align: left;
+}
+
+.forgot-password-content-form-input-section label .required {
+  color: #ff0000;
+  margin-left: 1px;
+}
+
+.forgot-password-content-form-input-section-buttons {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forgot-password-content-form-input-section-buttons button {
+  cursor: pointer;
+}
+
+.forgot-password-content-form-input-section-buttons input {
+  margin-left: 40px;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.forgot-password-content-form-input-section-buttons label {
+  color: #878c9f;
+  font-size: 14px;
+}
+
+.forgot-password-content-form .forgot {
+  margin-top: 15px;
+}
+
+.forgot-password-content-form .forgot a {
+  color: #00c194;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  margin-top: 15px;
+}
 /*# sourceMappingURL=styles.css.map */
