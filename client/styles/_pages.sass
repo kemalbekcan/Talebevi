@@ -86,11 +86,44 @@
         width: 100%
         text-align: center
         &__title
+            height: 170px
             color: #ffffff
             font-size: 54px
             font-weight: 600
             line-height: 1.2
             font-family: 'Ubuntu', sans-serif
+        &-filter
+            &-form
+                &-buttons
+                    display: flex
+                    justify-content: center
+                    &-lists
+                        display: flex
+                        &-list
+                            margin-right: 30px
+                            &__item
+                                height: 30px
+                                display: flex
+                                align-items: center
+                                background-color: transparent
+                                color: #ffffff
+                                border: none
+                                cursor: pointer
+                                &:hover
+                                    span
+                                        background-color: #00a376
+                                span
+                                    background-color: rgba(255, 255, 255, .2)
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    width: 30px
+                                    height: 30px
+                                    border-radius: 30px
+                                    margin-right: 10px
+                                .active
+                                    background-color: #00a376
+
 /*Home Page*/
 
 /*Sign Page*/
