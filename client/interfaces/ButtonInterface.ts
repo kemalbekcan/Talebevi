@@ -1,5 +1,5 @@
-type Props = {
-    message: string
+interface Props {
+    message: any
 }
 
 export default Props
