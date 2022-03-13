@@ -22,7 +22,7 @@
         &-container
             @include flexbox()
             justify-content: space-between
-            height: 70px
+            height: 86px
             &-logo
                 @include flexbox()
                 @include align-items()
@@ -32,22 +32,65 @@
                 &-list
                     @include flexbox()
                     &-item
-                        padding: 24px 12px
                         &__link
+                            padding: 30px 15px
+                            display: block
+                            height: 100%
+                            width: 100%
+                            font-size: 16px
                             color: $text-white
                             text-decoration: none
                         &:hover
-                            border-bottom: 1px solid $button-color
+                            border-bottom: 2px solid #50ffe4
+                        &.--active
+                                border-bottom: 2px solid #50ffe4
             &-settings
                 @include flexbox()
                 @include align-items()
                 &-lists
                     @include flexbox()
                     @include align-items()
-                    li
-                        a
+                    &-list
+                        width: 40px
+                        height: 40px
+                        border-radius: 40px
+                        border: 1px solid #ffffff
+                        position: relative
+                        margin: 10px
+                        &__item
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            width: 100%
+                            height: 100%
                             text-decoration: none
                             color: $text-white
+                        div
+                            display: block
+                            width: 22px
+                            height: 22px
+                            border-radius: 22px
+                            position: absolute
+                            top: -10px
+                            right: -5px
+                            background-color: $button-color
+                            span
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                width: 100%
+                                height: 100%
+                                color: white
+                                font-size: 12px
+    &-content
+        width: 100%
+        text-align: center
+        &__title
+            color: #ffffff
+            font-size: 54px
+            font-weight: 600
+            line-height: 1.2
+            font-family: 'Ubuntu', sans-serif
 /*Home Page*/
 
 /*Sign Page*/

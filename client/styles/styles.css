@@ -65,11 +65,30 @@
   padding: 15px 20px;
 }
 
+.wrapper .landing-page-navbar {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper .landing-page {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .wrapper .sign-in {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
+  -ms-grid-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
 }
 
 .wrapper .sign-in-content {
@@ -81,8 +100,8 @@
 .wrapper .sign-up {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
+  -ms-grid-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
 }
 
 .wrapper .sign-up-content {
@@ -94,8 +113,8 @@
 .wrapper .forgot-password {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
+  -ms-grid-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
 }
 
 .wrapper .forgot-password-content {
@@ -107,8 +126,8 @@
 .wrapper .error {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
+  -ms-grid-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
 }
 
 .wrapper .error-container {
@@ -150,7 +169,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 70px;
+  height: 86px;
 }
 
 .landing-page-navbar-container-logo {
@@ -177,17 +196,22 @@
   display: flex;
 }
 
-.landing-page-navbar-container-lists-list-item {
-  padding: 24px 12px;
-}
-
 .landing-page-navbar-container-lists-list-item__link {
+  padding: 30px 15px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
   color: #ffffff;
   text-decoration: none;
 }
 
 .landing-page-navbar-container-lists-list-item:hover {
-  border-bottom: 1px solid #00c194;
+  border-bottom: 2px solid #50ffe4;
+}
+
+.landing-page-navbar-container-lists-list-item.--active {
+  border-bottom: 2px solid #50ffe4;
 }
 
 .landing-page-navbar-container-settings {
@@ -208,9 +232,69 @@
   align-items: center;
 }
 
-.landing-page-navbar-container-settings-lists li a {
+.landing-page-navbar-container-settings-lists-list {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #ffffff;
+  position: relative;
+  margin: 10px;
+}
+
+.landing-page-navbar-container-settings-lists-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: #ffffff;
+}
+
+.landing-page-navbar-container-settings-lists-list div {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  background-color: #00c194;
+}
+
+.landing-page-navbar-container-settings-lists-list div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 12px;
+}
+
+.landing-page-content {
+  width: 100%;
+  text-align: center;
+}
+
+.landing-page-content__title {
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /*Home Page*/

@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import AddProperty from '@/buttons/AddProperty'
+import { VscArrowSwap, VscHeart } from "react-icons/vsc";
+import { FaRegUser } from "react-icons/fa";
+import { BsCart4 } from "react-icons/bs";
+
 function Header() {
     return (
         <header className="landing-page-navbar">
@@ -9,7 +13,7 @@ function Header() {
           </div>
           <nav className="landing-page-navbar-container-lists">
             <ul className="landing-page-navbar-container-lists-list">
-              <li className="landing-page-navbar-container-lists-list-item">
+              <li className="landing-page-navbar-container-lists-list-item --active">
                 <a
                   href="#"
                   className="landing-page-navbar-container-lists-list-item__link"
@@ -61,25 +65,23 @@ function Header() {
           </nav>
           <div className="landing-page-navbar-container-settings">
             <ul className="landing-page-navbar-container-settings-lists">
-              <li>
-                <a href="">Icon</a>
+              <li className='landing-page-navbar-container-settings-lists-list'>
+                <a href="" className='landing-page-navbar-container-settings-lists-list__item'><VscArrowSwap /></a>
+                <div><span>0</span></div>
+              </li>
+              <li className='landing-page-navbar-container-settings-lists-list'>
+                <a href="" className='landing-page-navbar-container-settings-lists-list__item'><VscHeart /></a>
+                <div><span>0</span></div>
+              </li>
+              <li className='landing-page-navbar-container-settings-lists-list'>
+                <a href="" className='landing-page-navbar-container-settings-lists-list__item'><FaRegUser /></a>
+              </li>
+              <li className='landing-page-navbar-container-settings-lists-list'>
+                <a href="" className='landing-page-navbar-container-settings-lists-list__item'><BsCart4 /></a>
+                <div><span>0</span></div>
               </li>
               <li>
-                <a href="">Icon</a>
-              </li>
-              <li>
-                <a href="">Icon</a>
-              </li>
-              <li>
-                <a href="">Icon</a>
-              </li>
-              <li>
-                <a href="">Icon</a>
-              </li>
-              <li>
-                <a href="">
                   <AddProperty message={"Add Property"} />
-                </a>
               </li>
             </ul>
           </div>
