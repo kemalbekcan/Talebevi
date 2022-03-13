@@ -1,13 +1,26 @@
-.landing-page, .sign-in, .sign-up
-.wrapper
+.landing-page, .sign-in, .sign-up, .contact, .contact-image, .agencies
     display: grid
     grid-template-columns: repeat(11, 1fr)
-    header
-        grid-column: 2 / 11
     .sign-in-content
         grid-column: 3 / 10
     .sign-up-content
         grid-column: 3 / 10
+    .contact-content
+        display: grid
+        grid-template-columns: repeat(11, 1fr)
+        grid-column: 3 / 10
+        .left-content
+            grid-column: 1 / 6
+        .right-content
+            grid-column: 6 / 12
+    .contact-image-see
+        grid-column: 3/10
+    .agencies-content
+        display: grid
+        grid-template-columns: repeat(11, 1fr)
+        grid-column: 3/10
+        .agencies-content-left
+            grid-column: 1/9
 header
 footer
     display: none

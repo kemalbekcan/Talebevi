@@ -1,5 +1,5 @@
 interface Props {
-    message: string
+    message: any
 }
 
 export default Props

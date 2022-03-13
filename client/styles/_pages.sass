@@ -4,6 +4,7 @@
 @import 'devices'
 
 /*Home Page*/
+
 .landing-page
     &-background
         z-index: -1
@@ -135,11 +136,11 @@
                 padding-right: 15px
                 button
                     cursor: pointer
-                    margin-top: 15px 
+                    margin-top: 15px
                     &:hover
                         transform: scale(1.05)
                         transition: 200ms
-                        background-color: $button-hover              
+                        background-color: $button-hover
             h2
                 font-weight: bold
                 font-size: 24px
@@ -171,7 +172,7 @@
                     .check
                         display: flex
                         align-items: center
-                    
+
                     input
                         margin-right: 10px
                         width: 18px
@@ -184,4 +185,218 @@
                     label
                         color: #878c9f
                         font-size: 14px
+
 /*Sign Up Page*/
+/*Contact Page*/
+.contact
+    .contact-content
+        margin-top: 100px
+        align-items: center
+        .left-content
+            margin-top: 50px
+            .title
+                font-size: 30px
+                line-height: 36px
+                font-weight: bold
+                margin-bottom: 10px
+            p
+                color: $secondary-text
+                font-size: 15px
+                line-height: 30px
+                text-align: left
+                margin-bottom: 30px
+            .widget
+                padding: 20px 18px
+                line-height: 30px
+                border-style: solid
+                border-color: #E4E9F2
+                border-width: 1px
+                border-radius: 10px
+                margin-bottom: 30px
+                box-shadow: 0px 11px 35px 0px rgba(193, 200, 213, 0.3)
+                &:hover
+                    transform: scale(1.01)
+                    transition: 300ms
+                .icons
+                    background-color: #f9fbfe
+                    width: 60px
+                    height: 60px
+                    line-height: 60px
+                    border-radius: 50%
+                    color: $button-color
+                    border-style: solid
+                    border-width: 1px
+                    border-color: #f9fbfe
+                    margin: 10px 25px 14px 10px
+                    &:hover
+                        color: #fff
+                        background-color: $button-color
+                        transition: 500ms
+                &-information
+                    display: flex
+                    align-items: center
+                &-text
+                    .social-media-icons
+                        color: $secondary-text
+                        font-size: 17px
+                        .icon
+                            margin-right: 14px
+                            cursor: pointer
+                            &:hover
+                                color: $button-color
+                                transform: scale(1.05)
+                                transition: 300ms
+
+                        
+                    h3
+                        color: #70778b
+                        font-weight: bold
+                        font-size: 15px
+                        line-height: 32px
+                    h2
+                        color: #222222
+                        font-size: 18px
+                        font-weight: bold
+                        line-height: 30px
+        .right-content
+            margin-left: 50px
+            border: 1px solid #EBEBEB
+            padding: 20px 30px
+            border-radius: 10px
+            &-text
+                h2
+                    font-weight: bold
+                    font-size: 30px
+                    line-height: 30px
+                    margin-bottom: 10px
+                p
+                    color: $secondary-text
+                    font-size: 15px
+                    line-height: 30px
+                    text-align: left
+                    margin-bottom: 30px
+            &-form
+                form
+                    display: flex
+                    justify-content: space-between
+                &-section
+                    width: 100%
+                    margin-bottom: 15px
+                    label
+                        display: block
+                        font-size: 14px
+                        line-height: 30px
+                        color: #a7a7a7
+                        font-weight: bold
+                        margin-bottom: 5px
+                    input,textarea
+                        line-height: 24px
+                        padding: 10px
+                        width: 91%
+                        background-color: $input-background
+                        border-style: solid
+                        border-width: 1px
+                        border-radius: 5px
+                        border-color: #e4e9f2
+                        outline: none
+                        cursor: text
+                        &:focus
+                            border-color: #80bdff
+                        &:hover
+                            border-color: $button-color
+                            transition: 300ms
+                    textarea
+                        overflow: auto
+                        resize: vertical
+                        width: 96%
+                        max-height: 195px
+                        min-height: 200px
+                    &:nth-child(1)
+                        padding-right: 15px
+                    &:nth-child(2)
+                        padding-left: 15px
+                .textarea-section
+                    padding: 0
+            button
+                width: 100%
+                cursor: pointer
+                line-height: 30px
+                &:hover
+                    background-color: $button-hover
+                    transition: 300ms
+.contact-image
+    margin-top: 100px
+/*Contact Page*/
+/*Agencies Page*/
+.agencies
+    background-color: $background
+    &-content
+        &-left
+            &-section
+                
+                &-element
+                    display: flex
+                    align-items: center
+                    background: #fff
+                    border: 1px solid $border-color
+                    border-radius: 8px
+                    padding: 22px
+                    margin-bottom: 30px
+                    margin-top: 30px
+                    &-image
+                        margin-right: 30px
+                        background-color: #f4f6fb 
+                        border-radius: 6px
+                        overflow: hidden 
+                    &-text
+                        &-section
+                            h3
+                                font-size: 20px
+                                line-height: 30px
+                                font-weight: 600
+                                margin-bottom: 4px
+                            &-location
+                                display: flex
+                                justify-content: space-between
+                                align-items: center
+                                font-size: 14px
+                                line-height: 30px
+                                margin-bottom: 5px
+                                color: $secondary-text
+                                &-address
+                                    display: flex
+                                    align-items: center
+                                    .icon
+                                        color: $button-color
+                                        margin-right: 5px
+                                        font-size: 20px
+                                &-views
+                                    display: flex
+                                    align-items: center
+                                    .icon
+                                        color: $button-color
+                                        margin-right: 5px
+                                        font-size: 20px
+                            &-about
+                                border-top: 1px solid $border-color
+                                padding-top: 10px
+                                margin-top: 3px
+                                color: $secondary-text
+                                line-height: 24px
+                                margin-bottom: 17px  
+                            &-buttons
+                                display: flex
+                                align-items: center
+                                justify-content: space-between
+                                padding-bottom: 10px
+                                &-details
+                                &-contact
+                                    button
+                                        padding: 0 15px
+                                        margin-left: 4px 
+                                    .icon
+                                        display: flex
+                                        font-size: 20px
+                                        
+                                        
+/*Agencies Page*/
