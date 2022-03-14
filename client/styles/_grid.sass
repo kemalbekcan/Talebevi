@@ -28,12 +28,42 @@
         grid-template-columns: repeat(11, 1fr)
         &-content
             grid-column: 3 / 10
+    .contact
+        display: grid
+        -ms-grid-columns: repeat(11, 1fr)
+        grid-template-columns: repeat(11, 1fr)
+        &-content
+            grid-column: 3 / 10
+            display: grid
+            -ms-grid-columns: repeat(11, 1fr)
+            grid-template-columns: repeat(11, 1fr)
+            .left-content
+                grid-column: 1 / 6
+            .right-content
+                grid-column: 6 / 12
+        &-image
+            display: grid
+            -ms-grid-columns: repeat(11, 1fr)
+            grid-template-columns: repeat(11, 1fr)
+            &-see
+                grid-column: 3 / 10
     .error
         display: grid
         -ms-grid-columns: repeat(11, 1fr)
         grid-template-columns: repeat(11, 1fr)
         &-container
             grid-column: 5 / 8
+    .agencies
+        display: grid
+        -ms-grid-columns: repeat(11, 1fr)
+        grid-template-columns: repeat(11, 1fr)
+        &-content
+            grid-column: 3 / 10
+            display: grid
+            -ms-grid-columns: repeat(11, 1fr)
+            grid-template-columns: repeat(11, 1fr)
+            &-left
+                grid-column: 1 / 9
         
     footer
         display: none

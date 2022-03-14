@@ -5,8 +5,8 @@ import { MdApartment } from 'react-icons/md'
 import { GiCommercialAirplane } from 'react-icons/gi'
 import { ImOffice } from 'react-icons/im'
 import { BiRestaurant } from 'react-icons/bi'
-import { SiReasonstudios } from "react-icons/si";
-import { MdVilla } from "react-icons/md";
+import { SiReasonstudios } from 'react-icons/si'
+import { MdVilla } from 'react-icons/md'
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
                   <ul className="landing-page-content-filter-form-buttons-lists">
                     <li className="landing-page-content-filter-form-buttons-lists-list">
                       <button className="landing-page-content-filter-form-buttons-lists-list__item">
-                        <span className='active'>
+                        <span className="active">
                           <MdApartment />
                         </span>
                         Apartments
@@ -73,14 +73,14 @@ const Home: NextPage = () => {
                     </li>
                   </ul>
                 </div>
-                <div className='landing-page-content-filter-form-search'>
-                  <input type="text" placeholder='Enter Keyword Here...' />
-                  <select placeholder='Select Type'>
+                <div className="landing-page-content-filter-form-search">
+                  <input type="text" placeholder="Enter Keyword Here..." />
+                  <select placeholder="Select Type">
                     <option value="">Sell</option>
                     <option value="">Buy</option>
                     <option value="">Rent</option>
                   </select>
-                  <select placeholder='Select Location'>
+                  <select placeholder="Select Location">
                     <option value="">New York</option>
                     <option value="">California</option>
                     <option value="">United States</option>
