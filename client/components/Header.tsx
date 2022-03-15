@@ -9,7 +9,7 @@ function Header() {
         <header className="landing-page-navbar">
         <div className="landing-page-navbar-container">
           <div className="landing-page-navbar-container-logo">
-            <Image src="/Majengoo.svg" width={157} height={40} />
+            <Image src="/Majengoo.svg" width="150px" height="25px" alt="logo" />
           </div>
           <nav className="landing-page-navbar-container-lists">
             <ul className="landing-page-navbar-container-lists-list">

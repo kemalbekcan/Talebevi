@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
+import Link from 'next/link'
 import Layout from '@/layout/Layout'
-import Image from 'next/image'
 import InputButton from '@/components/Buttons/InputButton'
 function index() {
   return (
@@ -8,10 +8,15 @@ function index() {
       <Layout title="404">
         <div className="error">
           <div className="error-container">
-            <Image src="404.png" layout="responsive" height={500} width={500} alt="" />
-            <h1>ERROR PAGE</h1>
-            <p>Sorry! This Page is Not Available!</p>
-            <InputButton message="GO BACK TO HOME PAGE" />
+            <img src="/404.png" alt="404" />
+            <h1 className="error-container__title">ERROR PAGE</h1>
+            <p className="error-container__description">
+              Sorry! This Page is
+              <br /> Not Available!
+            </p>
+            <Link href="/">
+              <a><InputButton message="GO BACK TO HOME PAGE" /></a>
+            </Link>
           </div>
         </div>
       </Layout>
