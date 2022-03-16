@@ -7,6 +7,7 @@ import { ImOffice } from 'react-icons/im'
 import { BiRestaurant } from 'react-icons/bi'
 import { SiReasonstudios } from 'react-icons/si'
 import { MdVilla } from 'react-icons/md'
+import { GoSettings } from "react-icons/go";
 
 const Home: NextPage = () => {
   return (
@@ -74,17 +75,27 @@ const Home: NextPage = () => {
                   </ul>
                 </div>
                 <div className="landing-page-content-filter-form-search">
-                  <input type="text" placeholder="Enter Keyword Here..." />
-                  <select placeholder="Select Type">
-                    <option value="">Sell</option>
-                    <option value="">Buy</option>
-                    <option value="">Rent</option>
-                  </select>
-                  <select placeholder="Select Location">
-                    <option value="">New York</option>
-                    <option value="">California</option>
-                    <option value="">United States</option>
-                  </select>
+                  <div>
+                    <input type="text" placeholder="Enter Keyword Here..." />
+                  </div>
+                  <div>
+                    <select placeholder="Select Type">
+                      <option value="">Sell</option>
+                      <option value="">Buy</option>
+                      <option value="">Rent</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select placeholder="Select Location">
+                      <option value="">New York</option>
+                      <option value="">California</option>
+                      <option value="">United States</option>
+                    </select>
+                  </div>
+                  <button className='landing-page-content-filter-form-search__setting-button'>
+                      <GoSettings />
+                    </button>
+                  <button className='landing-page-content-filter-form-search__search-button'>Search</button>
                 </div>
               </form>
             </div>
