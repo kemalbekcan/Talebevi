@@ -4,7 +4,6 @@
 @import 'devices'
 
 /*Home Page*/
-
 .landing-page
     &-background
         z-index: -1
@@ -16,7 +15,7 @@
         background-repeat: no-repeat
         background-size: cover
         width: 100%
-        height: 98vh
+        min-height: 732px
         border-bottom-left-radius: 60% 150px
         border-bottom-right-radius: 60% 150px
     &-navbar
@@ -59,7 +58,7 @@
                         position: relative
                         margin: 10px
                         &__item
-                            display: flex
+                            @include flexbox()
                             justify-content: center
                             align-items: center
                             width: 100%
@@ -76,7 +75,7 @@
                             right: -5px
                             background-color: $button-color
                             span
-                                display: flex
+                                @include flexbox()
                                 justify-content: center
                                 align-items: center
                                 width: 100%
@@ -96,15 +95,15 @@
         &-filter
             &-form
                 &-buttons
-                    display: flex
+                    @include flexbox()
                     justify-content: center
                     &-lists
-                        display: flex
+                        @include flexbox()
                         &-list
                             margin-right: 30px
                             &__item
                                 height: 30px
-                                display: flex
+                                @include flexbox()
                                 align-items: center
                                 background-color: transparent
                                 color: #ffffff
@@ -115,7 +114,7 @@
                                         background-color: #00a376
                                 span
                                     background-color: rgba(255, 255, 255, .2)
-                                    display: flex
+                                    @include flexbox()
                                     justify-content: center
                                     align-items: center
                                     width: 30px
@@ -126,7 +125,7 @@
                                     background-color: #00a376
                 &-search
                     margin-top: 30px
-                    display: flex
+                    @include flexbox()
                     justify-content: center
                     div
                         select
@@ -142,7 +141,7 @@
                         width: 58px
                         height: 60px
                         border: none
-                        display: flex
+                        @include flexbox()
                         align-items: center
                         justify-content: center
                         cursor: pointer
@@ -156,13 +155,19 @@
                         cursor: pointer
                     &-info
                         height: 60px
-                        display: flex
+                        @include flexbox()
                         justify-content: center
                         align-items: center
                         padding: 10px
                         h3
                             font-size: 20px
                             color: $text-white
+
+.landing-page-content-clients
+    width: 1240px
+    margin-top: 150px
+    margin-left: auto
+    margin-right: auto
 
 /*Home Page*/
 
@@ -202,7 +207,7 @@
                         margin-left: 1px
                 &-buttons
                     margin-top: 15px
-                    display: flex
+                    @include flexbox()
                     align-items: center
                     button
                         cursor: pointer
@@ -281,13 +286,12 @@
                         margin-left: 1px
                 &-buttons
                     margin-top: 15px
-                    display: flex
+                    @include flexbox()
                     align-items: center
                     justify-content: space-evenly
                     .check
-                        display: flex
+                        @include flexbox()
                         align-items: center
-
                     input
                         margin-right: 10px
                         width: 18px
@@ -396,7 +400,7 @@
                         background-color: $button-color
                         transition: 500ms
                 &-information
-                    display: flex
+                    @include flexbox()
                     align-items: center
                 &-text
                     .social-media-icons
@@ -440,7 +444,7 @@
                     margin-bottom: 30px
             &-form
                 form
-                    display: flex
+                    @include flexbox()
                     justify-content: space-between
                 &-section
                     width: 100%
@@ -498,7 +502,7 @@
         &-left
             &-section
                 &-element
-                    display: flex
+                    @include flexbox()
                     position: relative
                     align-items: center
                     background: #fff
@@ -539,7 +543,7 @@
                                 font-weight: 600
                                 margin-bottom: 4px
                             &-location
-                                display: flex
+                                @include flexbox()
                                 justify-content: space-between
                                 align-items: center
                                 font-size: 14px
@@ -547,14 +551,14 @@
                                 margin-bottom: 5px
                                 color: $secondary-text
                                 &-address
-                                    display: flex
+                                    @include flexbox()
                                     align-items: center
                                     .icon
                                         color: $button-color
                                         margin-right: 5px
                                         font-size: 20px
                                 &-views
-                                    display: flex
+                                    @include flexbox()
                                     align-items: center
                                     .icon
                                         color: $button-color
@@ -568,7 +572,7 @@
                                 line-height: 24px
                                 margin-bottom: 17px  
                             &-buttons
-                                display: flex
+                                @include flexbox()
                                 align-items: center
                                 justify-content: space-between
                                 padding-bottom: 10px
@@ -578,7 +582,7 @@
                                         padding: 0 15px
                                         margin-left: 4px 
                                     .icon
-                                        display: flex
+                                        @include flexbox()
                                         font-size: 20px
         &-right
             &-section
@@ -623,7 +627,7 @@
                                 line-height: 56px
                                 border: 1px solid red
                     &-buttons
-                        display: flex
+                        @include flexbox()
                         button
                             height: 56px
                             width: 100%
@@ -638,7 +642,7 @@
                             font-weight: bold
                             margin-left: 5px
                             font-size: 15px
-                            display: flex
+                            @include flexbox()
                             align-items: center
                             justify-content: center
                             column-gap: 5px

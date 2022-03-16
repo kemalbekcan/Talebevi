@@ -102,7 +102,9 @@ const Home: NextPage = () => {
                 </div>
               </form>
             </div>
-            <div className='landing-page-content-clients'>
+          </div>
+        </div>
+        <div className='landing-page-content-clients'>
               <div className='landing-page-content-clients-left'>
                 <span className='landing-page-content-clients-left__sub-title'>OUR CLIENTS</span>
                 <h2 className='landing-page-content-clients-left__title'>
@@ -211,8 +213,6 @@ const Home: NextPage = () => {
             </div>
             <div className='landing-page-content-become-real-estate-agent'>
             </div>
-          </div>
-        </div>
       </Layout>
     </Fragment>
   )
