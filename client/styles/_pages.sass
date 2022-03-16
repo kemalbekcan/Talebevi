@@ -455,11 +455,12 @@
 .agencies
     background-color: $background
     &-content
+        margin: 0 15px
         &-left
             &-section
-                
                 &-element
                     display: flex
+                    position: relative
                     align-items: center
                     background: #fff
                     border: 1px solid $border-color
@@ -467,11 +468,30 @@
                     padding: 22px
                     margin-bottom: 30px
                     margin-top: 30px
-                    &-image
+                    img
+                        width: auto
+                        height: 207px
                         margin-right: 30px
                         background-color: #f4f6fb 
                         border-radius: 6px
                         overflow: hidden 
+                    &-properties
+                        position: absolute
+                        top: 35px
+                        left: 35px
+                        background-color: #fff
+                        padding: 1px 10px 1px 17px
+                        font-size: 14px
+                        border-radius: 3px
+                        line-height: 25px
+                        overflow: hidden
+                        transition: 400ms
+                        color: $button-color
+                        font-weight: bold
+                        &:hover
+                            color: #fff
+                            background-color: $icon-button-hover
+                            transition: 300ms
                     &-text
                         &-section
                             h3
@@ -521,6 +541,74 @@
                                     .icon
                                         display: flex
                                         font-size: 20px
-                                        
+        &-right
+            &-section
+                padding: 30px
+                background-color: #fff 
+                border-radius:  10px
+                margin-top: 30px
+                margin-left: 30px
+                border: 1px solid $border-color
+                h3
+                    font-size: 22px
+                    line-height: 30px
+                    margin-bottom: 25px
+                    font-weight: bold
+                &-filter
+                    input
+                        border: 1px solid $border-color
+                        border-radius: 4px
+                        height: 50px
+                        padding-left: 15px
+                        outline: none
+                        width: 100%
+                        margin-bottom: 18px
+                        &::placeholder
+                            color: $placeholder 
+                            font-size: 15px                
+                    &-select
+                        select
+                            cursor: pointer
+                            border: 1px solid $border-color
+                            border-radius: 4px
+                            height: 50px
+                            line-height: 56px
+                            width: 100%
+                            margin-bottom: 18px
+                            outline: none
+                            padding-left: 15px
+                            color: $placeholder
+                            font-size: 15px
+                            option
+                                height: 50px
+                                line-height: 56px
+                                border: 1px solid red
+                    &-buttons
+                        display: flex
+                        button
+                            height: 56px
+                            width: 100%
+                            font-size: 14px
+                            cursor: pointer
+                            
+                        .reset-button
+                            border: 1px solid $button-color
+                            border-radius: 5px
+                            background-color: #fff
+                            color: $button-color
+                            font-weight: bold
+                            margin-left: 5px
+                            font-size: 15px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            column-gap: 5px
+                            .icon
+                                font-size: 18px
+                            &:hover
+                                background-color: $button-hover
+                                color: #fff
+                                transition: 300ms
+                                
                                         
 /*Agencies Page*/
