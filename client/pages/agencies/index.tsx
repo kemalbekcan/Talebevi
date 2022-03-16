@@ -2,10 +2,13 @@ import React, { Fragment } from 'react'
 import Image from 'next/image'
 import Layout from '@/layout/Layout'
 import IconButtons from '@/components/Buttons/IconButtons'
+import InputButton from '@/components/Buttons/InputButton'
+import LatestListing from '@/components/Latest/LatestListing'
 import { BsTelephoneFill, BsFillEyeFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import { RiGlobalFill } from 'react-icons/ri'
 import { IoLocationSharp } from 'react-icons/io5'
+import { ImLoop2 } from 'react-icons/im'
 
 const index = () => {
   return (
@@ -17,7 +20,10 @@ const index = () => {
               <div className="agencies-content-left-section">
                 <div className="agencies-content-left-section-element">
                   <div className="agencies-content-left-section-element-image">
-                    <Image src="/firma-icon.png" width={390} height={330} alt="" />
+                    <img src="/firma-icon.png" width={390} height={330} alt="" />
+                    <div className="agencies-content-left-section-element-properties">
+                      <h3>13 Properties</h3>
+                    </div>
                   </div>
                   <div className="agencies-content-left-section-element-text">
                     <div className="agencies-content-left-section-element-text-section">
@@ -53,7 +59,10 @@ const index = () => {
                 </div>
                 <div className="agencies-content-left-section-element">
                   <div className="agencies-content-left-section-element-image">
-                    <Image src="/firma-icon.png" width={390} height={330} alt="" />
+                    <img src="/firma-icon.png" width={390} height={330} alt="" />
+                    <div className="agencies-content-left-section-element-properties">
+                      <h3>13 Properties</h3>
+                    </div>
                   </div>
                   <div className="agencies-content-left-section-element-text">
                     <div className="agencies-content-left-section-element-text-section">
@@ -89,7 +98,10 @@ const index = () => {
                 </div>
                 <div className="agencies-content-left-section-element">
                   <div className="agencies-content-left-section-element-image">
-                    <Image src="/firma-icon.png" width={390} height={330} alt="" />
+                    <img src="/firma-icon.png" width={390} height={330} alt="" />
+                    <div className="agencies-content-left-section-element-properties">
+                      <h3>13 Properties</h3>
+                    </div>
                   </div>
                   <div className="agencies-content-left-section-element-text">
                     <div className="agencies-content-left-section-element-text-section">
@@ -125,7 +137,53 @@ const index = () => {
                 </div>
               </div>
             </div>
-            <div className="agencies-content-right"></div>
+            <div className="agencies-content-right">
+              <div className="agencies-content-right-section">
+                <h3>Advanced Search</h3>
+                <div className="agencies-content-right-section-filter">
+                  <input type="text" placeholder="What are you looking for?" />
+                  <div className="agencies-content-right-section-filter-select">
+                    <select name="category" id="">
+                      <option value={'selected'}>All Categories</option>
+                      <option value="villa">Villa</option>
+                      <option value="apartments">Apartments</option>
+                      <option value="commercial">Commercial</option>
+                      <option value="office">Office</option>
+                      <option value="studio-home">Studio Home</option>
+                    </select>
+                  </div>
+                  <div className="agencies-content-right-section-filter-select">
+                    <select name="location" id="">
+                      <option value={'selected'}>All Cities</option>
+                      <option value="istanbul">İstanbul</option>
+                      <option value="izmir">İzmir</option>
+                      <option value="bursa">Bursa</option>
+                      <option value="sinop">Sinop</option>
+                      <option value="ankara">Ankara</option>
+                    </select>
+                  </div>
+                  <div className="agencies-content-right-section-filter-select">
+                    <select name="districts" id="">
+                      <option value={'selected'}>All Districts</option>
+                      <option value="istanbul">İstanbul</option>
+                      <option value="izmir">İzmir</option>
+                      <option value="bursa">Bursa</option>
+                      <option value="sinop">Sinop</option>
+                      <option value="ankara">Ankara</option>
+                    </select>
+                  </div>
+                  <div className="agencies-content-right-section-filter-buttons">
+                    <InputButton message="FIND PROPERTY" />
+                    <button className="reset-button">
+                      <ImLoop2 className="icon" /> Reset
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="agencies-content-right-section">
+                <LatestListing />
+              </div>
+            </div>
           </div>
         </div>
       </Layout>
