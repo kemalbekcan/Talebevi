@@ -241,6 +241,8 @@
                 &:hover
                     transform: scale(1.01)
                     transition: 200ms
+
+
 /*Sign Page*/
 
 /*Sign Up Page*/
@@ -651,7 +653,52 @@
                             &:hover
                                 background-color: $button-hover
                                 color: #fff
-                                transition: 300ms
-                                
-                                        
+                                transition: 300ms                                
 /*Agencies Page*/
+/*Favorites Page*/
+.favorites
+    background-color: $background
+    padding-top: 30px 
+    &-content
+        &-left
+            margin-right: 20px
+            &-section
+                &-pick,&-latest
+                    background-color: #fff
+                    border: 1px solid $border-color
+                    border-radius: 10px
+                    padding: 30px
+                    margin-bottom: 30px
+                    &-button
+                        border-top: 1px solid $one-border-color
+                        &:hover
+                            background-color: $background
+                        &:active
+                            background-color: $background
+                        &:nth-last-child(1)             
+                            border-bottom: 1px solid $one-border-color
+        &-right
+            background-color: #fff
+            border-radius: 10px
+            border: 1px solid $border-color
+            padding: 30px
+            &-section
+                &-order
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-bottom: 10px
+                    h2
+                        font-size: 20px
+                        font-weight: bold
+                    &-buttons
+                        display: flex
+                        align-items: center
+                        column-gap: 20px
+                        &-check
+                            display: flex
+                            align-items: center
+                            column-gap: 5px                 
+
+
+/*Favorites Page*/
