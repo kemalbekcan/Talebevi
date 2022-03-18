@@ -1,1 +1,18 @@
 @import 'devices'
+@import 'breakpoint'
+
+@include large-desktop
+    body
+        border: 1px solid pink
+
+@include desktop
+    body
+        border: 1px solid red
+
+@include tablet
+    body
+        border: 1px solid green
+
+@include phone
+    body
+        border: 1px solid blue
