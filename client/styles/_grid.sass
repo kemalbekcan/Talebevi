@@ -67,6 +67,15 @@
                 grid-column: col 1 / span 8
             &-right
                 grid-column: col 8 / span 12
+    .favorites
+        &-content
+            display: grid
+            -ms-grid-columns: repeat(12, [col] 1fr)
+            grid-template-columns: repeat(12, [col] 1fr)
+            &-left
+                grid-column: col 3 / span 5
+            &-right
+                grid-column: col 5 / span 10
     .compare
         display: grid
         -ms-grid-columns: repeat(12, [col] 1fr)
