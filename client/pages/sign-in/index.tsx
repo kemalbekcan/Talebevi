@@ -26,8 +26,10 @@ const index = () => {
                 </div>
                 <div className="sign-in-content-form-input-section-buttons">
                   <InputButton message="Login" />
-                  <input type="checkbox" name="Remember Me" />
-                  <label htmlFor="">Remember Me</label>
+                  <div className="sign-in-content-form-input-section-buttons-check">
+                    <input type="checkbox" name="Remember Me" />
+                    <label htmlFor="">Remember Me</label>
+                  </div>
                 </div>
                 <div className="forgot">
                   <Link href={'/'}>

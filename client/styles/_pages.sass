@@ -214,19 +214,17 @@
                             transform: scale(1.05)
                             transition: 200ms
                             background-color: $button-hover
-                    input
+                    &-check
+                        @include flexbox()
+                        align-items: center
+                        width: 100%
+                        input
                         margin-left: 40px
-                        margin-right: 10px
-                        width: 18px
-                        height: 18px
                         cursor: pointer
-                        &:hover
-                            transform: scale(1.05)
-                            transition: 200ms
-
-                    label
-                        color: #878c9f
-                        font-size: 14px
+                        label
+                            margin-left: 10px
+                            color: #878c9f
+                            font-size: 14px
             .forgot
                 margin-top: 15px
                 a
@@ -502,6 +500,7 @@
         margin: 0 15px
         &-left
             &-section
+                margin: 0 15px
                 &-element
                     @include flexbox()
                     position: relative
@@ -512,13 +511,15 @@
                     padding: 22px
                     margin-bottom: 30px
                     margin-top: 30px
-                    img
-                        width: auto
-                        height: 207px
+                    &-image
+                        width: 40%
                         margin-right: 30px
-                        background-color: #f4f6fb 
-                        border-radius: 6px
-                        overflow: hidden 
+                        img
+                            width: auto
+                            height: 207px
+                            background-color: #f4f6fb 
+                            border-radius: 6px
+                            overflow: hidden 
                     &-properties
                         position: absolute
                         top: 35px
@@ -537,6 +538,7 @@
                             background-color: $icon-button-hover
                             transition: 300ms
                     &-text
+                        width: 70%
                         &-section
                             h3
                                 font-size: 20px
@@ -590,8 +592,7 @@
                 padding: 30px
                 background-color: #fff 
                 border-radius:  10px
-                margin-top: 30px
-                margin-left: 30px
+                margin: 30px 15px 0 15px 
                 border: 1px solid $border-color
                 h3
                     font-size: 22px
@@ -631,12 +632,13 @@
                         @include flexbox()
                         button
                             height: 56px
-                            width: 100%
+                            width: 70%
                             font-size: 14px
                             cursor: pointer
                             
                         .reset-button
                             border: 1px solid $button-color
+                            width: 30%
                             border-radius: 5px
                             background-color: #fff
                             color: $button-color

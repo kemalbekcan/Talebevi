@@ -1,17 +1,21 @@
 @import 'devices'
 
-@mixin large-desktop()
-    @media screen and (min-width: $large-desktop)
+@mixin desktop()
+    @media screen and (min-width: $desktop)
         @content
 
-@mixin desktop()
-    @media screen and (min-width: $desktop-size + 1) and (max-width: $large-desktop)
+@mixin laptop()
+    @media screen and (min-width: $laptop) and (max-width: $desktop)
         @content
 
 @mixin tablet()
-    @media screen and (min-width: $tablet) and (max-width: $desktop-size)
+    @media screen and (min-width: $tablet) and (max-width: $laptop)
         @content
 
 @mixin phone()
     @media screen and (min-width: $phone) and (max-width: $tablet - 1)
+        @content
+
+@mixin minphone()
+    @media screen and (min-width: 260px) and (max-width: $phone)
         @content
