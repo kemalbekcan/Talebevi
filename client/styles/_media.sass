@@ -1,22 +1,199 @@
 @import 'devices'
 @import 'breakpoint'
-
-@include large-desktop
-    body
-        border: 1px solid pink
+@import 'function'
 
 @include desktop
     body
+        border: 1px solid pink
+    /* Agencies */
+    .agencies
+        &-content
+            &-left
+                grid-column: col 2 / span 6 !important
+                &-section
+                    &-element
+                        &-properties
+                            top: 35px !important
+            &-right
+                grid-column: col 8 / span 4 !important
+
+@include laptop
+    body
         border: 1px solid red
+    
+    /* Agencies */
+    .agencies
+        &-content
+            &-left
+                grid-column: col 2 / span 6 !important
+                &-section
+                    &-element
+                        &-properties
+                            top: 50px !important
+            &-right
+                grid-column: col 8 / span 4 !important
 
 @include tablet
     body
         border: 1px solid green
+    /*Sign In*/
+    .sign-in-content
+        grid-column: col 2 / span 10 !important
+    /*Sign Up*/
+    .sign-up-content
+        grid-column: col 2 / span 10 !important
+    /*Contact*/
+    .contact
+        &-content
+            .left-content
+                grid-column: col 2 / span 10 !important
+            .right-content
+                grid-column: col 2 / span 10 !important
+                margin: 0 !important
+        &-image
+            &-see
+                grid-column: col 2 / span 10 !important
+    /* Agencies */
+    .agencies
+        &-content
+            &-left
+                grid-column: col 2 / span 10 !important
+            &-right
+                grid-column: col 2 / span 10 !important
 
 @include phone
+    body
+        border: 1px solid yellow
+    /*Sign In*/
+    .sign-in-content
+        grid-column: col 2 / span 10 !important
+        &-form-input-section-buttons
+            display: block !important
+            &-check
+                margin-top: 10px !important
+                margin-left: 0 !important
+    /*Sign Up*/
+    .sign-up-content
+        grid-column: col 2 / span 10 !important
+    button
+        width: 100% !important
+    /* Contact */
+    .contact
+        &-content
+            .left-content
+                grid-column: col 2 / span 10 !important
+            .right-content
+                grid-column: col 2 / span 10 !important
+                margin: 0 !important
+                &-form
+                    form
+                        display: block !important
+                        input
+                            width: 100% !important
+
+                    &-section
+                        padding: 0 !important
+                        textarea
+                            width: 100% !important
+        &-image
+            &-see
+                grid-column: col 2 / span 10 !important
     /* Agencies */
-    .agencies-content
-        grid-column: col 1 / span 12 !important
-    .agencies-content-left
-        grid-column: col 1 / span 12 !important
+    .agencies
+        &-content
+            &-left
+                grid-column: col 1 / span 12 !important
+                &-section
+                    margin: 0 !important
+                    &-element
+                        display: block !important
+                        &-image
+                            width: 100%
+                            margin: 0 !important
+                        img 
+                            width: 100%
+                        &-text
+                            width: 100%
+                            &-section
+                                &-buttons
+                                    button
+                                        width: unset !important                 
+            &-right
+                grid-column: col 1 / span 12 !important
+                &-section
+                    margin: 15px 0 !important
+@include minphone
+    /*Sign In*/
+    .sign-in-content
+        grid-column: col 2 / span 10 !important
+        &-form-input-section-buttons
+            display: block !important
+            &-check
+                margin-top: 10px !important
+                margin-left: 0 !important
+        button
+            width: 100% !important
+    /*Sign Up*/
+    .sign-up-content
+        grid-column: col 2 / span 10 !important
+        button
+            width: 100% !important
+        &-form-input-section-buttons
+            justify-content: unset !important
+    /* Contact */
+    .contact
+        &-content
+            .left-content
+                grid-column: col 2 / span 10 !important
+            .right-content
+                grid-column: col 2 / span 10 !important
+                margin: 0 !important
+                &-form
+                    form
+                        display: block !important
+                        input
+                            width: 100% !important
+
+                    &-section
+                        padding: 0 !important
+                        textarea
+                            width: 100% !important
+        &-image
+            &-see
+                grid-column: col 2 / span 10 !important                
     /* Agencies */
+    .agencies
+        &-content
+            &-left
+                grid-column: col 1 / span 12 !important
+                &-section
+                    margin: 0 !important
+                    &-element
+                        display: block !important
+                        &-image
+                            width: 100%
+                            margin: 0 !important
+                        img 
+                            width: 100%
+                        &-text
+                            width: 100%
+                            &-section
+                                &-location
+                                    display: block !important
+                                &-buttons
+                                    display: block 
+                                    button
+                                        width: unset !important
+                                        margin: 0 10px 10px 0 !important                 
+            &-right
+                grid-column: col 1 / span 12 !important
+                &-section
+                    margin: 15px 0 !important
+    .latest-listing
+        &-section
+            h2.list
+                font-size: 18px    
+            &-list
+                &-widget
+                    align-items: center
+                    padding-top: 10px !important

@@ -16,8 +16,7 @@ const LatestListing = () => {
             <IoLocationSharp className="icon" /> Abilene, Kansas
           </p>
           <h2 className="ref-price">
-            $1,500 <span>/</span>
-            <span className="type">mount</span>
+            $1,500
           </h2>
         </div>
         <div className="latest-listing-section-list">
@@ -31,8 +30,7 @@ const LatestListing = () => {
                 <IoLocationSharp className="icon" /> Abilene, Kansas
               </p>
               <h2 className="ref-price list">
-                $1,500 <span>/</span>
-                <span className="type">mount</span>
+                $1,500 
               </h2>
             </div>
           </div>
@@ -46,8 +44,7 @@ const LatestListing = () => {
                 <IoLocationSharp className="icon" /> Abilene, Kansas
               </p>
               <h2 className="ref-price list">
-                $1,500 <span>/</span>
-                <span className="type">mount</span>
+                $1,500 
               </h2>
             </div>
           </div>
@@ -61,8 +58,7 @@ const LatestListing = () => {
                 <IoLocationSharp className="icon" /> Abilene, Kansas
               </p>
               <h2 className="ref-price list">
-                $1,500 <span>/</span>
-                <span className="type">mount</span>
+                $1,500 
               </h2>
             </div>
           </div>
