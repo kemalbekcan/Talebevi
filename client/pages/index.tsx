@@ -8,6 +8,7 @@ import { BiRestaurant } from 'react-icons/bi'
 import { SiReasonstudios } from 'react-icons/si'
 import { MdVilla } from 'react-icons/md'
 import { GoSettings } from "react-icons/go";
+import { BsDot } from "react-icons/bs";
 
 const Home: NextPage = () => {
   return (
@@ -106,19 +107,19 @@ const Home: NextPage = () => {
         </div>
         <div className='landing-page-content-clients'>
               <div className='landing-page-content-clients-left'>
-                <span className='landing-page-content-clients-left__sub-title'>OUR CLIENTS</span>
+                <span className='landing-page-content-clients-left__sub-title'><BsDot />OUR CLIENTS</span>
                 <h2 className='landing-page-content-clients-left__title'>
                   We're going to became partners for the long run
                 </h2>
                 <p className='landing-page-content-clients-left__description'>Ghen an unknown printer took a galley of type andscr ambledit to make a type specimen book has survived not only five centuries but also.</p>
               </div>
-              <div className='landing-page-content-clients-left-right'>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div className='landing-page-content-clients-right'>
+                <img src="/client-logo-6.svg" alt="" />
+                <img src="/client-logo-5.svg" alt="" />
+                <img src="/client-logo-4.svg" alt="" />
+                <img src="/client-logo-3.svg" alt="" />
+                <img src="/client-logo-2.svg" alt="" />
+                <img src="/client-logo-1.svg" alt="" />
               </div>
             </div>
             <div className='landing-page-content-properties'>
