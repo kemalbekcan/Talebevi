@@ -33,6 +33,14 @@ const index = () => {
               </div>
             </div>
             <div className="favorites-content-right">
+              <div className="favorites-content-right-section-pick">
+                <div className="favorites-content-right-section-pick-button">
+                  <PickButton message={'Favorite Announcements'} />
+                </div>
+                <div className="favorites-content-right-section-pick-button">
+                  <PickButton message={'Favorite Agencies'} />
+                </div>
+              </div>
               <div className="favorites-content-right-section">
                 <div className="favorites-content-right-section-order">
                   <h2>My Favorite Refs</h2>
@@ -53,10 +61,10 @@ const index = () => {
                   </div>
                 </div>
                 <div className="favorites-content-right-section-ref">
-                  <FavoriteRef/>
-                  <FavoriteRef/>
-                  <FavoriteRef/>
-                  <FavoriteRef/>
+                  <FavoriteRef />
+                  <FavoriteRef />
+                  <FavoriteRef />
+                  <FavoriteRef />
                 </div>
               </div>
             </div>
