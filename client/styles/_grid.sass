@@ -11,6 +11,12 @@
         height: 30vw
         display: flex
         align-items: center
+    .landing-page-content-properties
+        display: grid
+        -ms-grid-columns: repeat(12, [col] 1fr)
+        grid-template-columns: repeat(12, [col] 1fr)
+        &-content
+            grid-column: col 1 / span 12
     .sign-in
         display: grid
         -ms-grid-columns: repeat(12, [col] 1fr)

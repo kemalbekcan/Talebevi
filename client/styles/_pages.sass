@@ -165,27 +165,81 @@
 
 .landing-page-content-clients
     width: 1240px
-    margin-top: 150px
-    margin-left: auto
-    margin-right: auto
+    margin: 150px auto 90px auto
     display: flex
     &-left
-        border: 1px solid red
-        width: 35%
+        width: 36%
+        padding: 10px
+        &__sub-title
+            color: #00c194
+            display: flex
+            align-items: center
+            &__icon
+                margin-left: -16px
+                font-size: 32px
         &__title
             font-size: 32px
             font-weight: 600
             color: #212121
             line-height: 1.2
-            border: 1px solid blue
             margin-bottom: 10px
             margin-top: 10px
+        &__description
+            color: #70778a
+            line-height: 1.5
+            font-size: 16px
     &-right
-        width: 55%
+        width: 64%
         display: flex
         flex-wrap: wrap
-        justify-content: center
-        border: 1px solid blue
+        justify-content: space-between
+        padding: 10px
+        img
+            display: block
+            margin: 0 22px 22px 0
+            cursor: pointer
+            -webkit-filter: grayscale(100%)
+            filter: grayscale(100%)
+            &:hover
+                -webkit-filter: grayscale(0%)
+                filter: grayscale(0%)
+
+.landing-page-content-properties
+    background-color: #EAF7F4
+    padding: 100px 0 80px 0
+    &-content
+        width: 1240px
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-header
+            &__sub-title
+                color: #00c194
+                display: flex
+                align-items: center
+                &__icon
+                    margin-left: -16px
+                    font-size: 32px
+            &__title
+                font-size: 32px
+                color: $heading-color
+                font-weight: 600
+                line-height: 1.2
+                font-family: $heading-font
+        &-action-buttons
+            &__item
+                border: 1px solid #00c194
+                width: 96px
+                height: 44px
+                background-color: #00c194
+                color: #ffffff
+                padding: 6px 35px
+                font-size: 15px
+                border-radius: 30px
+                margin: 3px
+                cursor: pointer
 /*Home Page*/
 
 /*Sign Page*/

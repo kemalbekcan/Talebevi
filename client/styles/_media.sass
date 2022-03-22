@@ -2,7 +2,7 @@
 @import 'breakpoint'
 @import 'function'
 
-@include desktop
+@include desktop-up
     body
         border: 1px solid pink
     /* Agencies */
@@ -17,7 +17,7 @@
             &-right
                 grid-column: col 8 / span 4 !important
 
-@include laptop
+@include desktop
     body
         border: 1px solid red
     
@@ -32,8 +32,9 @@
                             top: 50px !important
             &-right
                 grid-column: col 8 / span 4 !important
+    
 
-@include tablet
+@include laptop
     body
         border: 1px solid green
     /*Sign In*/
@@ -61,7 +62,7 @@
             &-right
                 grid-column: col 2 / span 10 !important
 
-@include phone
+@include tablet
     body
         border: 1px solid yellow
     /*Sign In*/
@@ -122,7 +123,8 @@
                 grid-column: col 1 / span 12 !important
                 &-section
                     margin: 15px 0 !important
-@include minphone
+
+@include phone
     /*Sign In*/
     .sign-in-content
         grid-column: col 2 / span 10 !important

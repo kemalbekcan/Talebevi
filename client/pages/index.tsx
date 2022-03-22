@@ -107,7 +107,7 @@ const Home: NextPage = () => {
         </div>
         <div className='landing-page-content-clients'>
               <div className='landing-page-content-clients-left'>
-                <span className='landing-page-content-clients-left__sub-title'><BsDot />OUR CLIENTS</span>
+                <span className='landing-page-content-clients-left__sub-title'><BsDot className='landing-page-content-clients-left__sub-title__icon' />OUR CLIENTS</span>
                 <h2 className='landing-page-content-clients-left__title'>
                   We're going to became partners for the long run
                 </h2>
@@ -123,17 +123,17 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className='landing-page-content-properties'>
-              <div>
-                <div>
-                  <span className='landing-page-content-properties__sub-title'>
-                    OUR PROPERTIES
+              <div className='landing-page-content-properties-content'>
+                <div className='landing-page-content-properties-content-header'>
+                  <span className='landing-page-content-properties-content-header__sub-title'>
+                    <BsDot className='landing-page-content-properties-content-header__sub-title__icon' />OUR PROPERTIES
                   </span>
-                  <h2 className='landing-page-content-properties__title'>Latest Properties</h2>
+                  <h2 className='landing-page-content-properties-content-header__title'>Latest Properties</h2>
                 </div>
-                <div>
-                  <button></button>
-                  <button></button>
-                  <button></button>
+                <div className='landing-page-content-properties-content-action-buttons'>
+                  <button className='landing-page-content-properties-content-action-buttons__item'>Sell</button>
+                  <button className='landing-page-content-properties-content-action-buttons__item'>Buy</button>
+                  <button className='landing-page-content-properties-content-action-buttons__item'>Rent</button>
                 </div>
               </div>
               <div className='landing-page-content-properties-cards'>
