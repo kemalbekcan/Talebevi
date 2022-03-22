@@ -16,11 +16,17 @@
                             top: 35px !important
             &-right
                 grid-column: col 8 / span 4 !important
+    /* Favorites */
+    .favorites
+        &-content
+            &-right
+                &-section-pick
+                    display: none !important
 
 @include laptop
     body
         border: 1px solid red
-    
+
     /* Agencies */
     .agencies
         &-content
@@ -32,6 +38,15 @@
                             top: 50px !important
             &-right
                 grid-column: col 8 / span 4 !important
+    /* Favorites */
+    .favorites
+        &-content
+            &-left
+                grid-column: col 2 / span 3 !important
+            &-right
+                grid-column: col 5 / span 7 !important
+                &-section-pick
+                    display: none !important
 
 @include tablet
     body
@@ -60,6 +75,18 @@
                 grid-column: col 2 / span 10 !important
             &-right
                 grid-column: col 2 / span 10 !important
+    /* Favorites */
+    .favorites
+        &-content
+            &-left
+                grid-column: col 2 / span 10 !important
+                margin-right: 0 !important
+                &-section-pick
+                    display: none !important
+            &-right
+                grid-column: col 2 / span 10 !important
+                order: -1
+                margin-bottom: 40px !important
 
 @include phone
     body
@@ -71,7 +98,7 @@
             display: block !important
             &-check
                 margin-top: 10px !important
-                margin-left: 0 !important
+                margin-left: -40px !important
     /*Sign Up*/
     .sign-up-content
         grid-column: col 2 / span 10 !important
@@ -110,18 +137,56 @@
                         &-image
                             width: 100%
                             margin: 0 !important
-                        img 
+                        img
                             width: 100%
                         &-text
                             width: 100%
                             &-section
                                 &-buttons
                                     button
-                                        width: unset !important                 
+                                        width: unset !important
             &-right
                 grid-column: col 1 / span 12 !important
                 &-section
                     margin: 15px 0 !important
+    /* Favorites */
+    .favorites
+        &-content
+            &-left
+                grid-column: col 2 / span 10 !important
+                margin-right: 0 !important
+                &-section-pick
+                    display: none !important
+            &-right
+                grid-column: col 1 / span 12 !important
+                order: -1
+                margin-bottom: 40px !important
+                &-section
+                    padding: 10px !important
+    .favorite-ref
+        padding: 5px !important
+        &-text
+            display: block !important
+            font-size: 15px !important
+            margin-left: 5px !important
+            padding-left: 5px !important
+            &-title
+                width: 100% !important
+                margin-bottom: 5px
+            &-price
+                width: 100% !important
+                text-align: left !important
+                margin-bottom: 5px
+            &-status
+                width: 100% !important
+                text-align: left !important
+                margin-bottom: 5px
+            &-icon
+                width: 100% !important
+                text-align: left !important
+                &:hover
+                    transform: none !important
+
 @include minphone
     /*Sign In*/
     .sign-in-content
@@ -130,7 +195,7 @@
             display: block !important
             &-check
                 margin-top: 10px !important
-                margin-left: 0 !important
+                margin-left: -40px !important
         button
             width: 100% !important
     /*Sign Up*/
@@ -160,7 +225,7 @@
                             width: 100% !important
         &-image
             &-see
-                grid-column: col 2 / span 10 !important                
+                grid-column: col 2 / span 10 !important
     /* Agencies */
     .agencies
         &-content
@@ -173,7 +238,7 @@
                         &-image
                             width: 100%
                             margin: 0 !important
-                        img 
+                        img
                             width: 100%
                         &-text
                             width: 100%
@@ -181,10 +246,10 @@
                                 &-location
                                     display: block !important
                                 &-buttons
-                                    display: block 
+                                    display: block
                                     button
                                         width: unset !important
-                                        margin: 0 10px 10px 0 !important                 
+                                        margin: 0 10px 10px 0 !important
             &-right
                 grid-column: col 1 / span 12 !important
                 &-section
@@ -192,8 +257,45 @@
     .latest-listing
         &-section
             h2.list
-                font-size: 18px    
+                font-size: 18px
             &-list
                 &-widget
                     align-items: center
                     padding-top: 10px !important
+    /* Favorites */
+    .favorites
+        &-content
+            &-left
+                grid-column: col 2 / span 10 !important
+                margin-right: 0 !important
+                &-section-pick
+                    display: none !important
+            &-right
+                grid-column: col 1 / span 12 !important
+                order: -1
+                margin-bottom: 40px !important
+                &-section
+                    padding: 10px !important
+    .favorite-ref
+        padding: 5px !important
+        &-text
+            display: block !important
+            font-size: 15px !important
+            margin-left: 5px !important
+            padding-left: 5px !important
+            &-title
+                width: 100% !important
+                margin-bottom: 5px
+            &-price
+                width: 100% !important
+                text-align: left !important
+                margin-bottom: 5px
+            &-status
+                width: 100% !important
+                text-align: left !important
+                margin-bottom: 5px
+            &-icon
+                width: 100% !important
+                text-align: left !important
+                &:hover
+                    transform: none !important

@@ -43,7 +43,7 @@
                         &:hover
                             border-bottom: 2px solid #50ffe4
                         &.--active
-                                border-bottom: 2px solid #50ffe4
+                            border-bottom: 2px solid #50ffe4
             &-settings
                 @include flexbox()
                 @include align-items()
@@ -219,8 +219,8 @@
                         align-items: center
                         width: 100%
                         input
-                        margin-left: 40px
-                        cursor: pointer
+                            margin-left: 40px
+                            cursor: pointer
                         label
                             margin-left: 10px
                             color: #878c9f
@@ -238,7 +238,6 @@
                 &:hover
                     transform: scale(1.01)
                     transition: 200ms
-
 
 /*Sign Page*/
 
@@ -319,7 +318,7 @@
             line-height: 50px
             text-align: center
         &__description
-            color: #000000  
+            color: #000000
             font-size: 26px
             font-weight: 600
             margin-bottom: 70px
@@ -335,7 +334,7 @@
                 font-weight: 600
                 text-transform: uppercase
                 cursor: pointer
-            
+
 /* Compare Page */
 .compare
     &-content
@@ -351,7 +350,6 @@
         p
             font-size: 16px
             color: #686868
-
 
 /*Contact Page*/
 .contact
@@ -413,7 +411,6 @@
                                 transform: scale(1.05)
                                 transition: 300ms
 
-                        
                     h3
                         color: #70778b
                         font-weight: bold
@@ -517,9 +514,9 @@
                         img
                             width: auto
                             height: 207px
-                            background-color: #f4f6fb 
+                            background-color: #f4f6fb
                             border-radius: 6px
-                            overflow: hidden 
+                            overflow: hidden
                     &-properties
                         position: absolute
                         top: 35px
@@ -573,7 +570,7 @@
                                 margin-top: 3px
                                 color: $secondary-text
                                 line-height: 24px
-                                margin-bottom: 17px  
+                                margin-bottom: 17px
                             &-buttons
                                 @include flexbox()
                                 align-items: center
@@ -583,16 +580,16 @@
                                 &-contact
                                     button
                                         padding: 0 15px
-                                        margin-left: 4px 
+                                        margin-left: 4px
                                     .icon
                                         @include flexbox()
                                         font-size: 20px
         &-right
             &-section
                 padding: 30px
-                background-color: #fff 
-                border-radius:  10px
-                margin: 30px 15px 0 15px 
+                background-color: #fff
+                border-radius: 10px
+                margin: 30px 15px 0 15px
                 border: 1px solid $border-color
                 h3
                     font-size: 22px
@@ -609,8 +606,8 @@
                         width: 100%
                         margin-bottom: 18px
                         &::placeholder
-                            color: $placeholder 
-                            font-size: 15px                
+                            color: $placeholder
+                            font-size: 15px
                     &-select
                         select
                             cursor: pointer
@@ -635,7 +632,7 @@
                             width: 70%
                             font-size: 14px
                             cursor: pointer
-                            
+
                         .reset-button
                             border: 1px solid $button-color
                             width: 30%
@@ -654,12 +651,12 @@
                             &:hover
                                 background-color: $button-hover
                                 color: #fff
-                                transition: 300ms                                
+                                transition: 300ms
 /*Agencies Page*/
 /*Favorites Page*/
 .favorites
     background-color: $background
-    padding-top: 30px 
+    padding-top: 30px
     &-content
         &-left
             margin-right: 20px
@@ -676,14 +673,20 @@
                             background-color: $background
                         &:active
                             background-color: $background
-                        &:nth-last-child(1)             
-                            border-bottom: 1px solid $one-border-color
         &-right
-            background-color: #fff
-            border-radius: 10px
-            border: 1px solid $border-color
-            padding: 30px
             &-section
+                background-color: #fff
+                border-radius: 10px
+                border: 1px solid $border-color
+                padding: 30px
+                &-pick
+                    @include flexbox()
+                    background-color: #fff
+                    border: 1px solid $border-color
+                    border-radius: 10px
+                    padding: 5px
+                    margin-bottom: 10px
+                    justify-content: space-around
                 &-order
                     display: flex
                     justify-content: space-between
@@ -699,7 +702,6 @@
                         &-check
                             display: flex
                             align-items: center
-                            column-gap: 5px                 
-
+                            column-gap: 5px
 
 /*Favorites Page*/
