@@ -9,6 +9,7 @@ import { SiReasonstudios } from 'react-icons/si'
 import { MdVilla } from 'react-icons/md'
 import { GoSettings } from "react-icons/go";
 import { BsDot } from "react-icons/bs";
+import { IoLocationSharp } from "react-icons/io5";
 
 const Home: NextPage = () => {
   return (
@@ -143,7 +144,7 @@ const Home: NextPage = () => {
                   <span className='landing-page-content-properties-cards-card__type'>Commercial</span>
                   <div className='landing-page-content-properties-cards-card-content'>
                     <h2 className='landing-page-content-properties-cards-card-content__title'>Countryside Modern Lake View</h2>
-                    <p className='landing-page-content-properties-cards-card-content__description'></p>
+                    <p className='landing-page-content-properties-cards-card-content__description'><IoLocationSharp className='landing-page-content-properties-cards-card-content__description__icon' /> New Jersey</p>
                   </div>
                   <div className='landing-page-content-properties-cards-card-content-properties'>
                     <div className='landing-page-content-properties-cards-card-content-properties-beds'></div>
@@ -156,8 +157,8 @@ const Home: NextPage = () => {
                   <span className='landing-page-content-properties-cards-card__price'>$1,200</span>
                   <span className='landing-page-content-properties-cards-card__type'>Commercial</span>
                   <div className='landing-page-content-properties-cards-card-content'>
-                    <h2 className='landing-page-content-properties-cards-card-content__title'></h2>
-                    <p className='landing-page-content-properties-cards-card-content__description'></p>
+                    <h2 className='landing-page-content-properties-cards-card-content__title'>Countryside Modern Lake View</h2>
+                    <p className='landing-page-content-properties-cards-card-content__description'><IoLocationSharp className='landing-page-content-properties-cards-card-content__description__icon' /> New Jersey</p>
                   </div>
                   <div className='landing-page-content-properties-cards-card-content-properties'>
                     <div className='landing-page-content-properties-cards-card-content-properties-beds'></div>
@@ -170,8 +171,8 @@ const Home: NextPage = () => {
                   <span className='landing-page-content-properties-cards-card__price'>$1,200</span>
                   <span className='landing-page-content-properties-cards-card__type'>Commercial</span>
                   <div className='landing-page-content-properties-cards-card-content'>
-                    <h2 className='landing-page-content-properties-cards-card-content__title'></h2>
-                    <p className='landing-page-content-properties-cards-card-content__description'></p>
+                    <h2 className='landing-page-content-properties-cards-card-content__title'>Countryside Modern Lake View</h2>
+                    <p className='landing-page-content-properties-cards-card-content__description'><IoLocationSharp className='landing-page-content-properties-cards-card-content__description__icon' /> New Jersey</p>
                   </div>
                   <div className='landing-page-content-properties-cards-card-content-properties'>
                     <div className='landing-page-content-properties-cards-card-content-properties-beds'></div>
@@ -180,7 +181,6 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-              
             </div>
             <div className='landing-page-content-video'>
               <div>
