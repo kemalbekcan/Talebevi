@@ -214,6 +214,7 @@
         display: flex
         justify-content: space-between
         align-items: center
+        margin-bottom: 46px
         &-header
             &__sub-title
                 color: #00c194
@@ -233,13 +234,82 @@
                 border: 1px solid #00c194
                 width: 96px
                 height: 44px
-                background-color: #00c194
-                color: #ffffff
                 padding: 6px 35px
                 font-size: 15px
                 border-radius: 30px
                 margin: 3px
                 cursor: pointer
+                &--active
+                    background-color: #00c194
+                    color: #ffffff
+                    border: 1px solid #00c194
+                    width: 96px
+                    height: 44px
+                    padding: 6px 35px
+                    font-size: 15px
+                    border-radius: 30px
+                    margin: 3px
+                    cursor: pointer
+    &-cards
+        border: 1px solid red
+        width: 1240px
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        height: 100vh
+        &-card
+            width: 388px
+            height: 390px
+            position: relative
+            &__image
+                width: 100%
+                height: 231px
+                display: block
+                -webkit-filter: brightness(90%)
+                filter: brightness(90%)
+                cursor: pointer
+            &__price
+                position: absolute
+                display: block
+                margin-top: -62px
+                left: 30px
+                width: 100px
+                height: 30px
+                color: #ffffff
+                font-size: 24px
+                font-weight: 600
+                text-align: center
+            &__type
+                position: absolute
+                display: block
+                margin-top: -20px
+                margin-left: 22px
+                width: 100px
+                height: 30px
+                background-color: #ffffff
+                color: #00c194
+                padding: 8px 12px
+                font-size: 14px
+                border-radius: 3px
+                z-index: 2
+            &-content
+                margin-top: 0
+                z-index: 1
+                border-radius: 0 0 4px 4px
+                background-color: #ffffff
+                height: 159px
+                &__title
+                    color: #212121
+                    font-size: 22px
+                    line-height: 32px
+                    padding-top: 15px
+                    padding-left: 22px
+                    padding-right: 22px
+                    cursor: pointer
+                    &:hover
+                        color: #00c194
 /*Home Page*/
 
 /*Sign Page*/

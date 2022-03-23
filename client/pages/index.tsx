@@ -99,7 +99,7 @@ const Home: NextPage = () => {
                   <button className='landing-page-content-filter-form-search__search-button'>Search</button>
                 </div>
                 <div className='landing-page-content-filter-form-search-info'>
-                  <h3>We’ve more than <span>54,000</span> apartments, place & plot.​</h3>
+                  <h3>We’ve more than <span>54,000</span> apartments, place & plot.</h3>
                 </div>
               </form>
             </div>
@@ -131,14 +131,44 @@ const Home: NextPage = () => {
                   <h2 className='landing-page-content-properties-content-header__title'>Latest Properties</h2>
                 </div>
                 <div className='landing-page-content-properties-content-action-buttons'>
-                  <button className='landing-page-content-properties-content-action-buttons__item'>Sell</button>
+                  <button className='landing-page-content-properties-content-action-buttons__item--active'>Sell</button>
                   <button className='landing-page-content-properties-content-action-buttons__item'>Buy</button>
                   <button className='landing-page-content-properties-content-action-buttons__item'>Rent</button>
                 </div>
               </div>
               <div className='landing-page-content-properties-cards'>
                 <div className='landing-page-content-properties-cards-card'>
-                  <img className='landing-page-content-properties-cards-card__image' src="" alt="" />
+                  <img className='landing-page-content-properties-cards-card__image' src="/house.jpeg" />
+                  <span className='landing-page-content-properties-cards-card__price'>$1,200</span>
+                  <span className='landing-page-content-properties-cards-card__type'>Commercial</span>
+                  <div className='landing-page-content-properties-cards-card-content'>
+                    <h2 className='landing-page-content-properties-cards-card-content__title'>Countryside Modern Lake View</h2>
+                    <p className='landing-page-content-properties-cards-card-content__description'></p>
+                  </div>
+                  <div className='landing-page-content-properties-cards-card-content-properties'>
+                    <div className='landing-page-content-properties-cards-card-content-properties-beds'></div>
+                    <div className='landing-page-content-properties-cards-card-content-properties-baths'></div>
+                    <div className='landing-page-content-properties-cards-card-content-properties-sqft'></div>
+                  </div>
+                </div>
+                <div className='landing-page-content-properties-cards-card'>
+                  <img className='landing-page-content-properties-cards-card__image' src="/house.jpeg" />
+                  <span className='landing-page-content-properties-cards-card__price'>$1,200</span>
+                  <span className='landing-page-content-properties-cards-card__type'>Commercial</span>
+                  <div className='landing-page-content-properties-cards-card-content'>
+                    <h2 className='landing-page-content-properties-cards-card-content__title'></h2>
+                    <p className='landing-page-content-properties-cards-card-content__description'></p>
+                  </div>
+                  <div className='landing-page-content-properties-cards-card-content-properties'>
+                    <div className='landing-page-content-properties-cards-card-content-properties-beds'></div>
+                    <div className='landing-page-content-properties-cards-card-content-properties-baths'></div>
+                    <div className='landing-page-content-properties-cards-card-content-properties-sqft'></div>
+                  </div>
+                </div>
+                <div className='landing-page-content-properties-cards-card'>
+                  <img className='landing-page-content-properties-cards-card__image' src="/house.jpeg" />
+                  <span className='landing-page-content-properties-cards-card__price'>$1,200</span>
+                  <span className='landing-page-content-properties-cards-card__type'>Commercial</span>
                   <div className='landing-page-content-properties-cards-card-content'>
                     <h2 className='landing-page-content-properties-cards-card-content__title'></h2>
                     <p className='landing-page-content-properties-cards-card-content__description'></p>
@@ -150,6 +180,7 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
+              
             </div>
             <div className='landing-page-content-video'>
               <div>
