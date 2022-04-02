@@ -12,3 +12,6 @@ airbnb-like app
 <li>Nodejs</li>
 <li>Expressjs</li>
 </ul>
+
+[x] Sign-up page
+[x] Signin page
