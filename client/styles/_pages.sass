@@ -317,10 +317,6 @@
                     align-items: center
                     &__icon
                         margin-right: 5px
-                &-properties
-                    display: flex
-                    justify-content: space-between
-                    align-items: center
 /*Home Page*/
 
 /*Sign Page*/
@@ -856,5 +852,214 @@
                             display: flex
                             align-items: center
                             column-gap: 5px
-
 /*Favorites Page*/
+/*Detail Page*/
+.detail
+    background-color: $background
+    &-content
+        padding-top: 55px 
+        &-product
+            @include flexbox()
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 25px
+            padding: 0 15px
+            &-left
+                &__title
+                    font-weight: bold
+                    font-size: 30px
+                    margin-bottom: 3px
+                    line-height: 40px
+                &-info
+                    @include flexbox()
+                    margin-bottom: 6px
+                    font-size: 15px
+                    color: $placeholder
+                    &__location,&__time,&__views
+                        @include flexbox()
+                        align-items: center
+                        &__icon
+                            margin-right: 8px
+                            font-size: 20px
+                    &__location::after,&__time::after
+                        content: '/'
+                        font-size: 16px
+                        padding: 0 9px
+            &-right
+                &__price
+                    font-weight: bold
+                    font-size: 30px
+                    margin-bottom: 18px
+                    line-height: 40px
+                    color: $button-color
+                    text-align: right
+                &-buttons
+                    ul
+                        @include flexbox()
+                        li
+                            background-color: #fff
+                            a
+                                @include flexbox()
+                                align-items: center
+                                justify-content: center
+                                border: 1px solid $one-border-color
+                                border-right: none
+                                width: 45px
+                                height: 45px
+                                line-height: 40px
+                                color: $button-color
+                                position: relative
+                                overflow: hidden
+                                transition: 300ms
+                                .icon
+                                    font-size: 22px
+                                    z-index: 10
+                            a::after
+                                content: ''
+                                width: 100%
+                                height: 100%
+                                top: -50px
+                                left: 0
+                                background: linear-gradient(-45deg,$button-color,$button-hover)
+                                position: absolute
+                                transition: 300ms
+                            a:hover::after
+                                top: 0
+                            a:hover
+                                color: #fff
+            &-information
+                @include flexbox()
+                &-left
+                    padding: 0 15px
+                    width: 65%
+                    &-overview
+                        margin-top: 10px
+                        background-color: #fff
+                        padding: 25px 30px 30px
+                        border-radius: 3px
+                        border: 1px solid $one-border-color
+                        &__title
+                            margin-bottom: 30px
+                            font-size: 20px
+                            font-weight: bold
+                        &-lists
+                            @include flexbox()
+                            flex-wrap: wrap 
+                            &-list
+                                @include flexbox()
+                                align-items: center
+                                width: 25%
+                                margin-bottom: 27px
+                                &-icon
+                                    margin-right: 15px
+                                    width: 50px
+                                    height: 50px
+                                    border: 1px solid $one-border-color
+                                    border-radius: 4px
+                                    box-shadow: 0 4px 18px 0 rgb(188 192 202 / 26%)
+                                    @include flexbox()
+                                    align-items: center
+                                    justify-content: center
+                                    transition: 300ms
+                                    .react-icon
+                                        color: $button-color
+                                        font-size: 30px 
+                                        transition: 300ms
+                                    &:hover
+                                        background-color: $button-color
+                                        .react-icon
+                                            color: #fff    
+                                &-content
+                                    font-size: 14px
+                                    &__title
+                                        margin-top: 2px
+                                        margin: 0
+                                        line-height: 1.4
+                                        font-weight: bold
+                                    &__value
+                                        color: $secondary-text
+                                        line-height: 2
+                    &-about
+                        margin-top: 10px
+                        background-color: #fff
+                        padding: 25px 30px 30px
+                        border-radius: 3px
+                        border: 1px solid $one-border-color
+                        &__title
+                            margin-bottom: 30px
+                            font-size: 20px
+                            font-weight: bold
+                        &__text
+                            line-height: 2
+                            color: $secondary-text
+                    &-details
+                        margin-top: 10px
+                        background-color: #fff
+                        padding: 25px 30px 30px
+                        border-radius: 3px
+                        border: 1px solid $one-border-color
+                        &__title
+                            margin-bottom: 30px
+                            font-size: 20px
+                            font-weight: bold
+                        &-lists
+                            @include flexbox()
+                            flex-wrap: wrap
+                            &-list
+                                @include flexbox()
+                                width: 50%
+                                line-height: 40px
+                                padding-left: 10px
+                                margin: 3px 0
+                                border-bottom: 1px solid $one-border-color
+                                &__title
+                                    min-width: 120px
+                                    font-weight: bold
+                                &__value
+                                    color: $secondary-text
+                    &-amenities
+                        margin-top: 10px
+                        background-color: #fff
+                        padding: 25px 30px 30px   
+                        border-radius: 3px
+                        border: 1px solid $one-border-color
+                        &__title
+                            margin-bottom: 30px
+                            font-size: 20px
+                            font-weight: bold
+                        &-lists 
+                            @include flexbox()
+                            flex-wrap: wrap
+                            color: $secondary-text
+                            font-size: 14px
+                            
+                            &-list
+                                @include flexbox()
+                                align-items: center
+                                margin-bottom: 10px
+                                flex: 0 0 33.333%
+                                line-height: 1
+                                padding: 5px 0
+                                &-icon
+                                    margin-right: 6px
+                                    font-size: 16px
+                                    color: $button-color            
+                    &-map
+                        margin-top: 10px
+                        background-color: #fff
+                        padding: 25px 30px 30px
+                        border-radius: 3px
+                        border: 1px solid $one-border-color
+                        &__title  
+                            margin-bottom: 30px
+                            font-size: 20px
+                            font-weight: bold 
+                &-right
+                    width: 35%
+                    &-section
+                        padding: 30px
+                        background-color: #fff
+                        border-radius: 10px
+                        margin: 30px 15px 0 15px
+                        border: 1px solid $border-color
+    /*Detail Page*/
