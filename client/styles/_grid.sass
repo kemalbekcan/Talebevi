@@ -64,11 +64,11 @@
             display: grid
             -ms-grid-columns: repeat(12, [col] 1fr)
             grid-template-columns: repeat(12, [col] 1fr)
-            grid-column: col 3 / span 8
+            grid-column: col 3 / span 8 !important
             &-left
-                grid-column: col 3 / span 5
+                grid-column: col 3 / span 5 !important
             &-right
-                grid-column: col 8 / span 3
+                grid-column: col 8 / span 3 !important
     .favorites
         &-content
             display: grid
@@ -85,5 +85,12 @@
         &-content
             background-color: #ffffff
             grid-column: col 3 / span 10
+    .detail
+        display: grid
+        -ms-grid-columns: repeat(12, [col] 1fr)
+        grid-template-columns: repeat(12, [col] 1fr)
+        &-content
+            grid-column: col 3 / span 8
+    
     footer
         display: none

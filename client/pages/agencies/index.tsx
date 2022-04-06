@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import Image from 'next/image'
 import Layout from '@/layout/Layout'
 import IconButtons from '@/components/Buttons/IconButtons'
 import InputButton from '@/components/Buttons/InputButton'

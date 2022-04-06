@@ -1,4 +1,5 @@
 @import 'vars'
+@import 'function'
 
 /* Custom Button */
 .property-button
@@ -217,3 +218,67 @@
             &:hover
                 transform: scale(1.2)
                 transition: 300ms
+.contact-owner
+    &__title
+        font-size: 22px
+        margin-bottom: 20px
+        font-weight: bold
+    &-info
+        @include flexbox()
+        margin-bottom: 20px
+        img
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            border: 1px solid #dadada
+            padding: 5px
+            margin-right: 10px
+        &-section
+            line-height: 25px
+            &__title
+                font-size: 20px
+                margin-bottom: 5px
+            &-whatsapp
+                @include flexbox()
+                align-items: center
+                cursor: pointer
+                &-icon
+                    color: $button-color
+                    margin-right: 5px
+                    font-size: 20px
+                &:hover
+                    color: $button-color
+                    transition: 300ms
+    button
+        margin-bottom: 10px
+    form
+        margin-top: 20px
+        input
+            margin-bottom: 10px
+            border: 1px solid rgba(0, 0, 0, 0.125)
+            border-radius: 4px
+            height: 50px
+            width: 100%
+            padding: 5px 10px
+            line-height: 1.5
+            outline: none
+            &:hover
+                border: 1px solid $icon-button-hover
+            &:focus
+                border-color: $icon-button-hover
+        textarea
+            padding: 5px 10px
+            line-height: 1.5
+            overflow: auto
+            resize: vertical
+            width: 100%
+            max-height: 30px
+            min-height: 140px
+            outline: none
+            margin-bottom: 10px
+            &:hover
+                border: 1px solid $icon-button-hover
+            &:focus
+                border-color: $icon-button-hover
+        button
+            width: 100%
